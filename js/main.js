@@ -158,7 +158,7 @@ function writeCode(prefix, code, fn){
             window.clearInterval(id)
             fn && fn.call()
         }
-        },100)
+        },10)
 }
 
 function writeMarkdown(markdown, fn){
