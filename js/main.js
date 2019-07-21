@@ -59,7 +59,7 @@ let result2 = `  `
 let result3 = ` 
 /*给页面添加一点CSS样式，变得好看起来吧*/
 *{
-    font-size: 12px;
+    font-size: 20px;
     font-family: kai;
 }
 /* 使用一个库 marked.js 把 markdown 转化成 HTML*/
