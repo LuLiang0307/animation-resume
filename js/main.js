@@ -4,6 +4,7 @@ var result =`
     * 我将以动画的形式来介绍我自己
     * 只用文字介绍太单调了
     * 我就用代码来介绍吧
+    * 来看看这个简单百变的页面吧~~
     * 首先准备一些样式
     */
     *{transition: all 1s;}
@@ -56,7 +57,7 @@ var result =`
 
 let result2 = `  `
 let result3 = ` 
-/*给简历添加一点CSS样式，变得好看起来吧*/
+/*给页面添加一点CSS样式，变得好看起来吧*/
 *{
     font-size: 12px;
     font-family: kai;
@@ -70,7 +71,7 @@ result4 = `
     background: white;
     overflow: auto;
 }
-/* Done~ 简历完成啦~ */
+/* Done~ 我的简介完成啦~ */
 `
 let md = 
 `
@@ -171,7 +172,7 @@ function writeMarkdown(markdown, fn){
             window.clearInterval(id)
             fn.call()
         }
-        },10)
+        },100)
 }
 
 function convertMarkdownToHtml(fn){
