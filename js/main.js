@@ -10,7 +10,7 @@ var result =`
     *{transition: all 1s;}
     html{
         background: rgb(222,222,222);
-        font-size: 16px;
+        font-size: 20px;
     }  
     .code-wrapper {
         width: 50%;
