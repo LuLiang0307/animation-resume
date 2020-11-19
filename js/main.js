@@ -46,12 +46,11 @@ var result = `
     /* 不玩了，我来介绍一下自己吧 */
     /* 我需要一张白纸 */
     #code-wrapper{
-        width: 50%; left: 0; position: fixed; 
-        height: 100%;
-      }
-      #paper > .content {
+        width: 50%; left: 0; position: fixed;height: 100%;
+    }
+    #paper > .content {
        display: block;
-      }
+    }
     /*好了，请看右边*/
     `
 
@@ -174,9 +173,9 @@ function writeCode(prefix, code, fn) {
     let n = 0
     let id = setInterval(() => {
         n += 1
-        domCode.innerHTML = Prism.highlight(prefix + code.substring(0, n), Prism.languages.css);
-        styleTag.innerHTML = prefix + code.substring(0, n)
-        domCode.scrollTop = domCode.scrollHeight
+        domCode.innerHTML = Prism.highlight(prefix + code.substring(0, n), Prism.languages.css); //高亮代码，使用prism库
+        styleTag.innerHTML = prefix + code.substring(0, n) //将之前的代码连接起来
+        domCode.scrollTop = domCode.scrollHeight //保证代码总是在最底下
         if (n >= code.length) {
             window.clearInterval(id)
             fn && fn.call()
